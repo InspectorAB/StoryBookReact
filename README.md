@@ -11,7 +11,6 @@ This repository contains a React project with **Storybook** integration. The pro
 - [Using Storybook](#using-storybook)
 - [Folder Structure](#folder-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -42,7 +41,7 @@ To set up this project locally, follow these steps:
 
    npm install
 
-Scripts
+## Scripts
 
 The following scripts are available in this project:
 
@@ -68,7 +67,7 @@ The following scripts are available in this project:
 
         npm run build-storybook
 
-Using Storybook
+## Using Storybook
 
 Storybook is configured to load stories from the src/components directory. Each component can have one or more associated .stories.js or .stories.jsx files.
 
@@ -95,7 +94,7 @@ Adding a New Story
     
     3. Run npm run storybook to see your new story.
 
-Folder Structure
+## Folder Structure
 
     StoryBookReact/
     ├── .storybook/          # Storybook configuration
@@ -108,7 +107,7 @@ Folder Structure
     ├── package.json         # Project metadata and dependencies
     └── README.md            # Documentation
 
-Contributing
+## Contributing
 
     Contributions are welcome! Please follow these steps to contribute:
 
