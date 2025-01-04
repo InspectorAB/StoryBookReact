@@ -1,0 +1,68 @@
+/* src/components/LeftNavigation.css */
+.left-navigation {
+    background-color: #3d147e;
+    color: #fff;
+    width: 250px;
+    transition: width 0.3s;
+  }
+  
+  .left-navigation.collapsed {
+    width: 80px;
+  }
+  
+  .left-navigation .logo {
+    cursor: pointer;
+    padding: 15px;
+  }
+  
+  .left-navigation .logo img {
+    width: 100%;
+  }
+  
+  .left-navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .left-navigation li {
+    padding: 10px;
+  }
+  
+  .left-navigation a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-navigation a .icon {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .left-navigation a span {
+    display: inline-block;
+  }
+  
+  .left-navigation .user-profile {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-navigation .user-profile img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .left-navigation .user-profile .logout {
+    margin-left: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  

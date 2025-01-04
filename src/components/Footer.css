@@ -1,0 +1,54 @@
+/* src/components/Footer.css */
+.footer {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .footer-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-logo img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .footer-subscribe {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-subscribe input {
+    padding: 8px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px 0 0 6px;
+    outline: none;
+  }
+  
+  .footer-subscribe button {
+    padding: 8px 12px;
+    background-color: #5e34eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .footer-rights {
+    color: #707070;
+  }
+  

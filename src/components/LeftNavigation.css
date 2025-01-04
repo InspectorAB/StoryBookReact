@@ -1,0 +1,25 @@
+/* src/components/LeftNavigation.css */
+.left-navigation {
+    width: 200px;
+    background-color: #f4f4f4;
+    padding: 15px;
+  }
+  
+  .left-navigation ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .left-navigation li {
+    margin-bottom: 10px;
+  }
+  
+  .left-navigation a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .left-navigation a:hover {
+    text-decoration: underline;
+  }
+  
