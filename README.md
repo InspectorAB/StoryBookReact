@@ -1,70 +1,121 @@
-# Getting Started with Create React App
+# React Storybook Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a React project with **Storybook** integration. The project is designed to showcase and document reusable components for React applications.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Scripts](#scripts)
+- [Using Storybook](#using-storybook)
+- [Folder Structure](#folder-structure)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Introduction
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Storybook is an open-source tool for developing UI components in isolation. This project demonstrates how to use Storybook alongside a React application to create, test, and document components effectively.
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React-based component library.
+- Storybook integration for visual testing and documentation.
+- Live reload for real-time updates.
+- Support for custom add-ons and configurations.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To set up this project locally, follow these steps:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/InspectorAB/StoryBookReact.git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Navigate to the project directory:
 
-### `npm run eject`
+   cd storybook-react-project
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   npm install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Scripts
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The following scripts are available in this project:
 
-## Learn More
+    Start the React app:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+        npm start
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+        Runs the app in development mode. Open http://localhost:3000 to view it in the browser.
 
-### Code Splitting
+    Start Storybook:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        npm run storybook
 
-### Analyzing the Bundle Size
+        Launches Storybook for component development. Open http://localhost:6006 to view it.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    Build React app for production:
 
-### Making a Progressive Web App
+        npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+        Creates an optimized production build.
 
-### Advanced Configuration
+    Build Storybook:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+        npm run build-storybook
 
-### Deployment
+Using Storybook
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Storybook is configured to load stories from the src/components directory. Each component can have one or more associated .stories.js or .stories.jsx files.
 
-### `npm run build` fails to minify
+Adding a New Story
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    1. Create a new component in src/components/YourComponent.
+
+    2. Add a .stories.js file in the same directory, e.g. YourComponent.stories.js:
+
+        import React from 'react';
+        import YourComponent from './YourComponent';
+
+        export default {
+            title: 'YourComponent',
+            component: YourComponent,
+        };
+
+        const Template = (args) => <YourComponent {...args} />;
+
+        export const Default = Template.bind({});
+        Default.args = {
+            // Default props for the component
+        };
+    
+    3. Run npm run storybook to see your new story.
+
+Folder Structure
+
+    StoryBookReact/
+    ├── .storybook/          # Storybook configuration
+    ├── public/              # Static assets
+    ├── src/
+    │   ├── components/      # React components and stories
+    │   ├── App.js           # Main application file
+    │   ├── index.js         # Entry point
+    │   └── ...              # Other source files
+    ├── package.json         # Project metadata and dependencies
+    └── README.md            # Documentation
+
+Contributing
+
+    Contributions are welcome! Please follow these steps to contribute:
+
+        1. Fork the repository.
+        2. Create a new branch: git checkout -b feature/your-feature-name.
+        3. Commit your changes: git commit -m 'Add some feature'.
+        4. Push to the branch: git push origin feature/your-feature-name.
+        5. Open a pull request.
+
+Happy coding! 🎉
